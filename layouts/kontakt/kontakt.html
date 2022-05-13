@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/box_1.css">
+    <link rel="stylesheet" href="/css/box_email.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- Code that all your templates share, like a header -->
+    {{ partial "header_main.html" . }}
+    {{ partial "submenu.html" . }}
+
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: lighter; margin-left: 12%;margin-top: 4%;color: chocolate;font-size: 50px; margin-bottom: 0%;">Kontakt</h1>
+    <div class="flex-container" style="width: inherit;">
+      <div class="col-25" style="margin-right: 2%;margin-left: 2%;margin-top: 0%;">
+          <div class="box1column" style="background-color: white; line-height: 200%; height: fit-content;width:fit-content; border-left: none;" >
+            {{range .Pages}}{{.Content}}{{end}}
+          </div>
+        </div>
+        <div class="col-75" style="width: 70%;margin-left: 2%;">
+          <div class="box1column" style="background-color: white; width: inherit; height: fit-content;border-left: none;">
+            <div class="container" style="background-color: white;" >
+              {{partial "box_email.html" . }}
+            </div>
+          </div>
+          </div>
+    </div>
+
+
+
+
+    {{ block "footer" . }}
+    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{ partial "footer.html" . }}
+    {{ end }}
+    
+  </body>
+</html>

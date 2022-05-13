@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/css/select_post.css">
+
+<div style="margin-left: 10%;margin-right: 10%;margin-top: 3%;">
+    {{range .Pages}}
+    {{if eq .Type "selection2"}}
+    <div class="selectdiv" onmouseover="style.color='chocolate'" onmouseout="style.color='black'">
+        {{.Description}}
+        <div class="hidden">
+            {{.Content}}
+        </div>
+    </div>
+    <br>
+    {{end}}
+    {{end}}
+</div>

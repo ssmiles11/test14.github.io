@@ -1,0 +1,17 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+  {{ end }}
+{{ define "main" }}
+  {{ partial "marquee1.html" . }}
+  {{ partial "submenu_single.html" . }}
+  {{ partial "list_posts.html" . }}
+
+  {{with .Parent}}
+  {{if ne .Section "karriere"}}
+  {{ partial "box_1.html" . }}
+  {{else}}
+  {{ partial "box_2.html" . }}
+  {{end}}
+  {{end}}
+
+{{ end }}

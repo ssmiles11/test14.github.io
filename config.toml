@@ -1,0 +1,162 @@
+baseURL = 'https://ssmiles11.github.io/'
+languageCode = 'en-us'
+title = 'GridCon Consulting GmbH'
+
+
+[menu]
+  [[menu.main]]
+    name = "Unternehmen"
+    url = "/unternehmen"
+    weight = 1
+
+  [[menu.main]]
+    name = "Consulting"
+    url = "/consulting"
+    weight = 2
+
+    [[menu.main]]
+      name = "Testautomatisierung im Meldewesen"
+      url = "/consulting/testautomatisierung-im-meldewesen"
+      parent = "Consulting"
+      weight = 1
+
+    [[menu.main]]
+      name = "Toolgestützte Reportinglösungen"
+      url = "/consulting/toolgestuetzte-reportingloesungen"
+      parent = "Consulting"
+      weight = 2
+
+    [[menu.main]]
+      name = "Meldewesen Änderungsprozesse"
+      url = "/consulting/meldewesen-aenderungsprozesse"
+      parent = "Consulting"
+      weight = 3
+
+    [[menu.main]]
+      name = "Datenmigration Meldewesen"
+      url = "/consulting/datenmigration-im-meldewesen"
+      parent = "Consulting"
+      weight = 4
+
+    [[menu.main]]
+      name = "Solvency II Consulting"
+      url = "/consulting/solvency-ii-consulting"
+      parent = "Consulting"
+      weight = 5
+  
+  [[menu.main]]
+    name = "Solutions"
+    url = "/solutions"
+    weight = 3
+
+    [[menu.main]]
+      name = "Kernkomponenten"
+      url = "/solutions/kernkomponenten"
+      parent = "Solutions"
+      weight = 1
+
+    [[menu.main]]
+      name = "GRC² Regressiontest"
+      url = "/solutions/kernkomponenten/grc2-regressiontest"
+      parent = "Solutions"
+      weight = 2
+      
+    [[menu.main]]
+      name = "GRC² Management Reporting"
+      url = "/solutions/kernkomponenten/grc2-management-reporting"
+      parent = "Solutions"
+      weight = 3
+      
+    [[menu.main]]
+      name = "GRC² Ready To Run"
+      url = "/solutions/kernkomponenten/grc2-ready-to-run"
+      parent = "Solutions"
+      weight = 4
+      
+    [[menu.main]]
+      name = "Zusatzmodule"
+      url = "/solutions/zusatzmodule"
+      parent = "Solutions"
+      weight = 5
+      
+    [[menu.main]]
+      name = "GRC² GridAudit"
+      url = "/solutions/zusatzmodule/grc2-gridaudit"
+      parent = "Solutions"
+      weight = 6
+      
+    [[menu.main]]
+      name = "GRC² GridReporting"
+      url = "/solutions/zusatzmodule/grc2-gridreporting"
+      parent = "Solutions"
+      weight = 7
+      
+    [[menu.main]]
+      name = "Weitere"
+      url = "/solutions/zusatzmodule"
+      parent = "Solutions"
+      weight = 8
+      
+  [[menu.main]]
+    name = "Services"
+    url = "/services"
+    weight = 4
+
+    [[menu.main]]
+      name = "Regression Testing"
+      url = "/services/regression-testing"
+      parent = "Services"
+      weight = 1
+
+    [[menu.main]]
+      name = "Meldewesen on Demand"
+      url = "/services/meldewesen-on-demand"
+      parent = "Services"
+      weight = 2
+
+    [[menu.main]]
+      name = "Regulatory Impact"
+      url = "/services/regulatory-impact"
+      parent = "Services"
+      weight = 3
+      
+    [[menu.main]]
+      name = "Technical Support"
+      url = "/services/technical-support"
+      parent = "Services"
+      weight = 4
+      
+  [[menu.main]]
+    name = "Karriere"
+    url = "/karriere"
+    weight = 5
+
+    [[menu.main]]
+      name = "Stellenangebote"
+      url = "/karriere/stellenangebote"
+      parent = "Karriere"
+      weight = 1
+
+    [[menu.main]]
+      name = "Warum GridCon"
+      url = "/karriere/warum-gridcon"
+      parent = "Karriere"
+      weight = 2
+
+    [[menu.main]]
+      name = "Einstiegsmöglichkeiten"
+      url = "/karriere/einstiegsmoeglichkeiten"
+      parent = "Karriere"
+      weight = 3
+      
+    [[menu.main]]
+      name = "Weiterentwicklung"
+      url = "/karriere/weiterentwicklung"
+      parent = "Karriere"
+      weight = 4
+      
+    [[menu.main]]
+      name = "Karrierestufen"
+      url = "/karriere/karrierestufen"
+      parent = "Karriere"
+      weight = 5

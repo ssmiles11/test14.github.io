@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index_special.css">
+    <link rel="stylesheet" href="/css/box_1.css">
+    <link rel="stylesheet" href="/css/box_email.css">
+    <title>{{ block "title" . }}
+      
+      {{ .Site.Title }}
+    {{ end }}</title>
+
+  </head>
+  <body>
+    <!-- Code that all your templates share, like a header -->
+    {{ partial "header_main.html" . }}
+    {{ block "main" . }}
+    <!--The part of the page that begins to differ between templates -->
+
+    <div class="grossezeichenhidden">
+      <p class="grossezeichen">GridCon<br><px style="font-size: 50%;">Connecting Business To IT</p>
+    </div>
+
+    <div class="aktuellethemen">
+      <p><b>Aktuelle Themen:</b>
+        <a class="aktuellenthemen font2" href="/grc2-fragen/">>GRC² Regressiontest(Fragen und Antworten zu unserer Meldewesen-Zusatzkomponete)</a>
+      </p>
+    </div>
+
+    
+
+    <div style="margin: 5% 10% 5% 10%; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+
+      {{range .Pages}}
+        {{if eq .Section "posts"}}
+        <div class="flex-container" style="margin: 0 auto;">
+        {{range first 3 .Pages}}
+        <div class="col-25" style="margin:0 5% 0 3%">
+        <div class="index_column">
+          <h1 style="color: chocolate;">{{.Title}}</h1>
+          <hr>
+          {{.Content}}
+          <a class="index_column" href="/{{.Description}}">> Erfahren Sie mehr</a>
+        </div>
+        </div>
+        {{end}}
+      </div>
+      {{end}}
+      {{end}}
+    </div>
+
+    {{ end }}
+
+
+    {{ block "footer" . }}
+    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{partial "footer.html" . }}
+    {{ end }}
+
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/css/box_1.css">
+
+<div class="flex-container">
+  {{range .Pages}}
+  {{if eq .Type "phase2"}}
+      <div class="box1column" style="height: 110px;">
+        <h1 class="title1">{{ .Title }}</h1>
+        <button class="button1" style="left: 190px;top: -20px;"><a class="box1" href="{{.Permalink}}">ZUR LEISTUNG</a></button>
+      </div>
+  {{end}}
+  {{end}}
+</div>

@@ -1,0 +1,23 @@
+
+{{ define "main" }}
+<main>
+{{ partial "marquee1.html" . }}
+{{ partial "submenu.html" . }}
+
+{{range .Pages}}
+{{if eq .Type "phase1"}}
+{{ partial "list_posts.html" . }}
+{{end}}
+{{end}}
+
+{{if ne .Section "karriere"}}
+{{ partial "box_1.html" . }}
+{{else}}
+{{ partial "box_2.html" . }}
+{{end}}
+
+
+
+
+</main>
+{{ end }}

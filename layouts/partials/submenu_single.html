@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/submenu.css">
+
+
+<style>
+    @media screen and (max-width: 600px) {
+        div.handysubmenu ul.submenu li.handysubmenu {
+            margin-left: 7%;
+        }
+    }
+</style>
+
+<div class="handysubmenu">
+<ul class="submenu">
+    <li class="submenu" style="margin-left: 10%;"><a class="submenu" href={{.Site.BaseURL}}>Home</a></li>
+    <li class="submenu">{{with .Parent}}<a class="submenu" href="{{.Permalink}}">&nbsp&nbsp|&nbsp&nbsp{{.Title}}</a>{{end}}</li>
+    <li class="submenu handysubmenu" ><p>&nbsp&nbsp|&nbsp&nbsp{{ .Title }}</p></li>
+</ul>
+</div>

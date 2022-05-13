@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main>
+{{ partial "marquee1.html" . }}
+{{ partial "submenu.html" . }}
+
+{{range .Pages}}{{if eq .Type "phase1"}}{{ partial "list_posts.html" . }}{{end}}{{end}}
+
+{{range .Pages}}{{range  .Pages}}{{if eq .Type "phase1"}}{{ partial "list_posts.html" . }}{{with .Parent}}{{ partial "box_1.html" . }}{{end}}{{end}}{{end}}{{end}}
+
+{{if eq .Permalink "http://localhost:1313/solutions/kernkomponenten/"}}{{ partial "box_1.html" . }}{{end}}
+
+
+{{if eq .Permalink "http://localhost:1313/solutions/zusatzmodule/"}}{{ partial "box_1.html" . }}{{end}}
+
+</main>
+{{ end }}
